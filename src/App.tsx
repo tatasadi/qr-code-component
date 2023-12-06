@@ -1,7 +1,11 @@
+import QRCode from "./components/QRCode"
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <main className="bg-[#D5E1EF] h-screen flex justify-center items-center">
+        <QRCode />
+      </main>
     </>
   )
 }
