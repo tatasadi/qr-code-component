@@ -1,20 +1,18 @@
 export default function QRCode() {
   return (
-    <div className="max-w-xs p-4 rounded-2xl bg-white font-['Outfit']">
-      <div className="bg-[#2C7DFA] flex justify-center items-center p-12 rounded-xl relative overflow-hidden">
-        <div className=" bg-[#3685FF] w-80 h-80 absolute z-0 rounded-full top-[-70%] left-[-44%]"></div>
-        <div className=" bg-[#3685FF] w-64 h-64 absolute z-0 rounded-full bottom-[-75%] right-[-30%]"></div>
-        <img src="/images/qrcode.svg" alt="qr-code" className="z-10" />
+    <div className="bg-white p-4 w-80 font-outfit text-center rounded-[1.25rem]">
+      <div className="bg-blue mb-4 p-16 rounded-[0.625rem] relative overflow-hidden">
+        <div className="bg-blueshade w-80 h-80 absolute top-[-50%] left-[-40%] rounded-full z-1"></div>
+        <div className="bg-blueshade w-64 h-64 absolute bottom-[-60%] right-[-30%] rounded-full z-1"></div>
+        <img src="/images/qrcode.svg" className="z-10 relative" />
       </div>
-      <div className="p-4 text-center">
-        <h1 className="font-bold text-[1.375rem] text-[#1F314F] mb-2">
-          Improve your front-end skills by building projects
-        </h1>
-        <p className="text-[#7D889E] text-[0.9375rem]">
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
-        </p>
-      </div>
+      <h1 className="text-darknavy mb-6 text-[1.375rem] font-bold">
+        Improve your front-end skills by building projects
+      </h1>
+      <p className="text-gray mb-4 mx-4 text-[0.9375rem] tracking-[0.01175rem]">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
     </div>
   )
 }
